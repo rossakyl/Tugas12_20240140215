@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Form Pendaftaran</title>
+
+    <!-- FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <!-- LEFT -->
+        <div class="left">
+
+            <div class="overlay">
+
+                <h1>Join With Us 🚀</h1>
+
+                <p>
+                    Form pendaftaran peminatan mahasiswa 
+                    berbasis HTML DOM Javascript dengan 
+                    tampilan modern dan interaktif.
+                </p>
+
+            </div>
+
+        </div>
+
+        <!-- RIGHT -->
+        <div class="right">
+
+            <div class="title">
+
+                <h2>Pendaftaran Peminatan</h2>
+
+                <span>
+                    Isi data dengan lengkap
+                </span>
+
+            </div>
+
+            <form>
+
+                <!-- NAMA -->
+                <div class="inputBox">
+
+                    <label>Nama Lengkap</label>
+
+                    <input 
+                        type="text" 
+                        id="nama"
+                        placeholder="Masukkan nama lengkap"
+                    >
+
+                </div>
+
+                <!-- NIM -->
+                <div class="inputBox">
+
+                    <label>NIM</label>
+
+                    <input 
+                        type="text" 
+                        id="nim"
+                        placeholder="Masukkan NIM"
+                    >
+
+                </div>
+
+                <!-- PEMINATAN -->
+                <div class="inputBox">
+
+                    <label>Pilih Peminatan</label>
+
+                    <div class="radioGroup">
+
+                        <label class="radioCard">
+
+                            <input 
+                                type="radio" 
+                                name="peminatan"
+                                value="Programming"
+                            >
+
+                            <span>💻 Programming</span>
+
+                        </label>
+
+                        <label class="radioCard">
+
+                            <input 
+                                type="radio" 
+                                name="peminatan"
+                                value="Desain"
+                            >
+
+                            <span>🎨 Desain</span>
+
+                        </label>
+
+                        <label class="radioCard">
+
+                            <input 
+                                type="radio" 
+                                name="peminatan"
+                                value="Jaringan"
+                            >
+
+                            <span>🌐 Jaringan</span>
+
+                        </label>
+
+                        <label class="radioCard">
+
+                            <input 
+                                type="radio" 
+                                name="peminatan"
+                                value="Data"
+                            >
+
+                            <span>📊 Data</span>
+
+                        </label>
+
+                    </div>
+
+                </div>
+
+                <!-- ALAMAT -->
+                <div class="inputBox">
+
+                    <label>Alamat</label>
+
+                    <textarea 
+                        id="alamat"
+                        rows="4"
+                        placeholder="Masukkan alamat lengkap"
+                    ></textarea>
+
+                </div>
+
+                <!-- ROW -->
+                <div class="row">
+
+                    <!-- ANGKATAN -->
+                    <div class="inputBox">
+
+                        <label>Angkatan</label>
+
+                        <select id="angkatan">
+
+                            <option value="2020">2020</option>
+                            <option value="2021">2021</option>
+                            <option value="2022">2022</option>
+                            <option value="2023">2023</option>
+                            <option value="2024">2024</option>
+
+                        </select>
+
+                    </div>
+
+                    <!-- TANGGAL -->
+                    <div class="inputBox">
+
+                        <label>Tanggal</label>
+
+                        <input 
+                            type="date" 
+                            id="tanggal"
+                        >
+
+                    </div>
+
+                </div>
+
+                <!-- BUTTON -->
+                <button 
+                    type="button"
+                    onclick="kirimData()"
+                >
+                    Kirim Data
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
